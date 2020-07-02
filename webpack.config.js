@@ -18,6 +18,11 @@ module.exports = {
         test: /.\tsx?$/,
         loader: 'awesome-typescript-loader',
         exclude: /node_modules/,
+      },
+      {
+        test: /.\tsx?$/,
+        loader: 'eslint-loader',
+        include: path.resolve(__dirname, 'src')
       }
     ]
   } 

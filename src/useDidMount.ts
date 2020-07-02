@@ -1,4 +1,4 @@
-import {useEffect} from 'react'
+import { useEffect } from 'react'
 
 const useDidMount = (fn: () => any): void => {
   useEffect(() => {

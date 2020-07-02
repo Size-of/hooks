@@ -1,5 +1,4 @@
-import { useRef, useCallback } from "react";
-
+import { useRef, useCallback } from 'react'
 
 const useSetState = <T extends object>(initialState: T = {} as T): [T, (changeState: Partial<T>) => void] => {
   const stateRef = useRef(initialState)
